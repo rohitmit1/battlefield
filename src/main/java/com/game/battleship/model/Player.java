@@ -7,7 +7,7 @@ public interface Player {
 	String getName();
 	void placeShips(List<Ship> ships);
 	List<Ship> getShips();
-	HitResult attack(Location location);
+	HitResult attack(Player opponent, Location location);
 	List<String> getDestroyedShips(Player opponent);
 
 }
