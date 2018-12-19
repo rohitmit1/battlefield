@@ -6,4 +6,9 @@ public class Battleship extends AbstractShip {
 		super(4, start, orientation);
 	}
 
+	@Override
+	public String getName() {
+		return ShipType.Battleship.toString();
+	}
+
 }

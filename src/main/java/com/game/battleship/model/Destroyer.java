@@ -6,4 +6,9 @@ public class Destroyer extends AbstractShip {
 		super(2, start, orientation);
 	}
 
+	@Override
+	public String getName() {
+		return ShipType.Destroyer.toString();
+	}
+
 }

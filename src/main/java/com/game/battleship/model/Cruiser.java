@@ -6,4 +6,9 @@ public class Cruiser extends AbstractShip {
 		super(3, start, orientation);
 	}
 
+	@Override
+	public String getName() {
+		return ShipType.Cruiser.toString();
+	}
+
 }

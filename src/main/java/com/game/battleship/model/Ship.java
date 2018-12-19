@@ -4,6 +4,7 @@ import java.util.List;
 
 public interface Ship {
 	int getSize();
+	String getName();
 	List<Square> getSquares();
 	default boolean occupies(Location location) {
 		for(Square square : getSquares()) {
