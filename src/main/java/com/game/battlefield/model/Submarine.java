@@ -2,7 +2,7 @@ package com.game.battlefield.model;
 
 public class Submarine extends AbstractShip {
 
-	protected Submarine(Location start, Orientation orientation) {
+	public Submarine(Coordinate start, Orientation orientation) {
 		super(3, start, orientation);
 	}
 

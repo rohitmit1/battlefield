@@ -2,7 +2,7 @@ package com.game.battlefield.model;
 
 public class Cruiser extends AbstractShip {
 
-	public Cruiser(Location start, Orientation orientation) {
+	public Cruiser(Coordinate start, Orientation orientation) {
 		super(3, start, orientation);
 	}
 

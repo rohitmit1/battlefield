@@ -6,13 +6,13 @@ public interface Ship {
 	int getSize();
 	String getName();
 	List<Square> getSquares();
-	default boolean occupies(Location location) {
+	default Square squareAt(Coordinate location) {
 		for(Square square : getSquares()) {
 			if(square.getLocation().equals(location)) {
-				return true;
+				return square;
 			}
 		}
-		return false;
+		return null;
 	}
 	default ShipStatus getStatus() {
 		int hitCount = 0;

@@ -1,11 +1,11 @@
 package com.game.battlefield.model;
 
-public final class Location {
+public final class Coordinate {
 	
 	private char column;
 	private int row;
 	
-	public Location(char column, int row) {
+	public Coordinate(char column, int row) {
 		super();
 		this.column = column;
 		this.row = row;
@@ -34,12 +34,16 @@ public final class Location {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Location other = (Location) obj;
+		Coordinate other = (Coordinate) obj;
 		if (column != other.column)
 			return false;
 		if (row != other.row)
 			return false;
 		return true;
+	}
+	@Override
+	public String toString() {
+		return "Coordinate [column=" + column + ", row=" + row + "]";
 	}
 	
 	

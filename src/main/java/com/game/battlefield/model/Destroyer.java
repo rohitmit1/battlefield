@@ -2,7 +2,7 @@ package com.game.battlefield.model;
 
 public class Destroyer extends AbstractShip {
 
-	public Destroyer(Location start, Orientation orientation) {
+	public Destroyer(Coordinate start, Orientation orientation) {
 		super(2, start, orientation);
 	}
 

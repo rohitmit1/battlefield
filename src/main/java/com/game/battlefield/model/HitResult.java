@@ -5,6 +5,11 @@ public class HitResult {
 	boolean isHit;
 	String destroyedShip;
 	
+	public HitResult(boolean isHit, String destroyedShip) {
+		super();
+		this.isHit = isHit;
+		this.destroyedShip = destroyedShip;
+	}
 	public boolean isHit() {
 		return isHit;
 	}

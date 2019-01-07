@@ -2,7 +2,7 @@ package com.game.battlefield.model;
 
 public class AircraftCarrier extends AbstractShip {
 
-	public AircraftCarrier(Location start, Orientation orientation) {
+	public AircraftCarrier(Coordinate start, Orientation orientation) {
 		super(5, start, orientation);
 	}
 

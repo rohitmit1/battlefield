@@ -2,22 +2,22 @@ package com.game.battlefield.model;
 
 public class Square {
 	
-	private Location location;
+	private Coordinate location;
 	private boolean isHit;
 	
-	public Square(Location location) {
+	public Square(Coordinate location) {
 		this(location, false);
 	}
 	
-	public Square(Location location, boolean isHit) {
+	public Square(Coordinate location, boolean isHit) {
 		super();
 		this.location = location;
 		this.isHit = isHit;
 	}
-	public Location getLocation() {
+	public Coordinate getLocation() {
 		return location;
 	}
-	public void setLocation(Location location) {
+	public void setLocation(Coordinate location) {
 		this.location = location;
 	}
 	public boolean isHit() {

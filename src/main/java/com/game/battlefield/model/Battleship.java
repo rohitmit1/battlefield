@@ -2,7 +2,7 @@ package com.game.battlefield.model;
 
 public class Battleship extends AbstractShip {
 
-	public Battleship(Location start, Orientation orientation) {
+	public Battleship(Coordinate start, Orientation orientation) {
 		super(4, start, orientation);
 	}
 
